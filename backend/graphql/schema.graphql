@@ -1,0 +1,47 @@
+type Torrent {
+  url: String!
+  hash: String!
+  quality: String!
+  type: String!
+  seeds: Int!
+  peers: Int!
+  size: String!
+  size_bytes: Int!
+  date_uploaded: String!
+  date_uploaded_unix: Int!
+}
+
+type Movie {
+  id: Int!
+  url: String!
+  imdb_code: String!
+  title: String!
+  title_english: String!
+  title_long: String!
+  slug: String!
+  year: Int!
+  rating: Float!
+  runtime: Int!
+  genres: [String]!
+  summary: String!
+  description_full: String!
+  synopsis: String!
+  yt_trailer_code: String!
+  language: String!
+  mpa_rating: String!
+  background_image: String!
+  background_image_original: String!
+  small_cover_image: String!
+  medium_cover_image: String!
+  large_cover_image: String!
+  state: String!
+  torrents: [Torrent]!
+  date_uploaded: String!
+  date_uploaded_unix: Int!
+}
+
+type Query {
+  movies(limit: Int, rating: Float): [Movie]!
+  movie(id: Int!): Movie
+  suggestions(id: Int!): [Movie]!
+}

@@ -1,0 +1,4 @@
+{
+  "ignore" : [],
+  "exec" : "node dist/index.js"
+}

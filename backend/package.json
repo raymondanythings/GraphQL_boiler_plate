@@ -1,0 +1,26 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "Movie Api with Graphql",
+  "main": "index.ts",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "tsc-watch --onSuccess \"node dist/src/index.js\""
+  },
+  "author": "Raymondanythings<raymondanything@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "graphql-yoga": "^1.18.3",
+    "ts-node": "^10.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-preset-stage-3": "^6.24.1",
+    "tsc-watch": "^4.6.2",
+    "typescript": "^4.6.2"
+  }
+}
